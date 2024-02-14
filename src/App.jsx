@@ -1,11 +1,18 @@
-function App(props) {
-  
+import React, { useState } from 'react';
+
+const Componente = () => {
+  const [state, setState] = useState({ msj: "(from changed state)" });
+
+  const mostrarMensaje = () => {
+    alert(state.msj);
+  };
 
   return (
-    <>
-     <h1>hola {props.tp2}</h1>
-    </>
-  )
-}
+    <div>
+      <p>Estado: {state.msj}</p>
+      <button onClick={mostrarMensaje}>Mostrar Mensaje</button>
+    </div>
+  );
+};
 
-export default App
+export default Componente;
