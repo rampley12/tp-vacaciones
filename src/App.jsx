@@ -1,9 +1,9 @@
-function App() {
+function App(props) {
   
 
   return (
     <>
-     <h1>hola mundo</h1>
+     <h1>hola {props.tp2}</h1>
     </>
   )
 }
